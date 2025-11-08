@@ -6,7 +6,7 @@ const app = express()
 
 app.use(
   cors({
-    origin: process.env.CLIENT_URL || 'http://localhost:5173',
+    origin: process.env.CLIENT_URL || 'http://localhost:5173' || "https://frontend-seven-opal-23.vercel.app",
     credentials: true,
   }),
 )
