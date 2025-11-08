@@ -4,7 +4,10 @@ const songRoutes = require('./routes/Songs.routes')
 
 const app = express()
 
-const defaultOrigins = ['http://localhost:5173']
+const defaultOrigins = [
+  'http://localhost:5173',
+  'https://frontend-seven-opal-23.vercel.app',
+]
 const configuredOrigins = process.env.CLIENT_URL
   ? process.env.CLIENT_URL.split(',').map((origin) => origin.trim()).filter(Boolean)
   : []

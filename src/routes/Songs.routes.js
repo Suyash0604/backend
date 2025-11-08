@@ -44,7 +44,7 @@ router.get('/songs', async (req, res) => {
   } catch (error) {
     console.error('Error fetching songs:', error)
     res.status(500).json({ message: 'Failed to fetch songs' })
-  }
+  }har
 })
 
 module.exports = router
